@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-md-2">
+        <div class="summary">
+            <div class="card-body">
+                <h1 class="card-title">summary</h1>
+
+
+                <p >A Malayali writing about another Malayali, was considered to be the first biography in Malayalam and is that of P. N. Narayana Pillai’s Chithramezhuthu Koi Thampuran (1913). P. K. Paramesawaran Nair, Kandathil Varghese Mappila, Mahakavi K. P.  Kesava Pillai, A. D. Harisarma,  P. Anathan Pillai, K. Surendran, Unnikrishnan Nair, Mundassery, M. Bhageerathi Amma Thampuran, E. M. J. Venniyoor, T. M.  Chummar, P. Sankara Menon, Prof. P. J. Purushothaman Pillai, Moorkothu Kunjappa, K. P. S. Menon, Dr. K. T. Ramavarma, K. P. Narayana Pisharady and many other eminent writers have made their presence felt in this field.
+
+                The field of biography/ autobiography/ pen-portraits literature is very popular in Malayalam. Taking a cue from tradition, the new generation is also very active in the writing of biographies and autobiographies.</p>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="container col-md-8">
+        <h1 id="h1">New Profile</h1>
+        <form  class="form-box" [formGroup]="addProfileForm">
+            <div class="container">
+                <label for="">Name:</label><input type="text" id="in1" formControlName="name"><br>
+                <div *ngIf="(this.addProfileForm.get('name')?.touched||this.addProfileForm.get('name')?.dirty)&&this.addProfileForm.get('name')?.errors" style="color: red;"> Invalid</div>
+                <label for="">Age:</label><input type="text" id="in2" formControlName="age"><br>
+                <div *ngIf="(this.addProfileForm.get('age')?.touched||this.addProfileForm.get('age')?.dirty)&&this.addProfileForm.get('age')?.errors" style="color: red;"> Invalid</div>
+
+                <label for="">Address:</label><textarea name="address" id="in3" cols="20" rows="6"formControlName="address"></textarea ><br>
+                    <div *ngIf="(this.addProfileForm.get('address')?.touched||this.addProfileForm.get('address')?.dirty)&&this.addProfileForm.get('address')?.errors" style="color: red;"> Invalid</div>
+
+                <label for="">Phone Number:</label><input type="text" id="in4" formControlName="phnno"><br>
+                <div *ngIf="(this.addProfileForm.get('phnno')?.touched||this.addProfileForm.get('phnno')?.dirty)&&this.addProfileForm.get('phnno')?.errors" style="color: red;"> Invalid</div>
+
+                <label for="">Occupation:</label><input type="text" id="in5" formControlName="occupation"><br>
+                <div *ngIf="(this.addProfileForm.get('occupation')?.touched||this.addProfileForm.get('occupation')?.dirty)&&this.addProfileForm.get('occupation')?.errors" style="color: red;"> Invalid</div>
+
+                <label for="">Email:</label><input type="email" id="in6" formControlName="email"><br>
+                <div *ngIf="(this.addProfileForm.get('email')?.touched||this.addProfileForm.get('email')?.dirty)&&this.addProfileForm.get('email')?.errors" style="color: red;"> Invalid</div>
+
+                <label for="">state:</label><input type="text" id="in7" formControlName="state" 
+                [typeahead]="list" ><br>
+                <div *ngIf="(this.addProfileForm.get('state')?.touched||this.addProfileForm.get('state')?.dirty)&&this.addProfileForm.get('state')?.errors" style="color: red;"> Invalid</div>
+
+
+
+                <button class="btn1 btn btn-danger">Clear</button>
+                <button class="btn2 btn btn-success" (click)="register()">Submit</button>
+
+            </div>
+
+        </form>
+    
+    </div>
+    
+
+</div>

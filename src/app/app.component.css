@@ -1,0 +1,31 @@
+.nav{
+    background-color: rgb(72, 31, 8);
+
+    color: white;
+
+    height: 80px;
+
+}
+.welcome{
+    font-size: 45px;
+    color:white;
+    margin-left: 30px;
+    padding-left: 10PX;
+    margin-top: 40px;
+}
+.nav-h1{
+    color:white;
+    font-size: 20px;
+    margin-left: 1200px;
+    margin-top: -100px;
+    /* margin-bottom: 30PX; */
+
+}
+.nav-h2{
+    color:white;
+    font-size: 20px;
+    margin-left: 30PX;
+    /* margin-bottom: 30PX; */
+    margin-top: -100px;
+
+}

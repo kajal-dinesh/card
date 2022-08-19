@@ -1,0 +1,32 @@
+    <div class="col-md-2" id="summary">
+        <h1 class="card-title">summary</h1>
+
+        <p>A Malayali writing about another Malayali, was considered to be the first biography in Malayalam and is
+                that
+                of P. N. Narayana Pillai’s Chithramezhuthu Koi Thampuran (1913). P. K. Paramesawaran Nair, Kandathil
+                Varghese Mappila, Mahakavi K. P. Kesava Pillai, A. D. Harisarma, P. Anathan Pillai, K. Surendran,
+                Unnikrishnan Nair, Mundassery, M. Bhageerathi Amma Thampuran, E. M. J. Venniyoor, T. M. Chummar, P.
+                Sankara
+                Menon, Prof. P. J. Purushothaman Pillai, Moorkothu Kunjappa, K. P. S. Menon, Dr. K. T. Ramavarma, K. P.
+                Narayana Pisharady and many other eminent writers have made their presence felt in this field.
+
+                The field of biography/ autobiography/ pen-portraits literature is very popular in Malayalam. Taking a
+                cue
+                from tradition, the new generation is also very active in the writing of biographies and
+                autobiographies.
+            </p>
+    </div>
+    <div class="col-md-4 img-box" *ngFor="let item of data">
+        <div>
+            <img src="{{item.img}}" alt="">
+        </div>
+        <div>
+            <h2>{{item.name}}</h2>
+            <h3>{{item.age}}</h3>
+            <h4>{{item.occupation}}</h4>
+            <div>
+                <button class="btn btn-danger con-btn1">Edit</button>
+                <button (click)="view(item.id)" class="btn btn-success con-btn2">View</button>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,40 @@
+#summary{
+    /* background-image: linear-gradient( to top,green,white 100%); */
+    background-color: rgb(72, 31, 8);
+    height: 190vh;
+    min-height: 100%;
+    color:white;
+    border: 1px solid black;
+    
+
+}
+img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    
+}
+.img-box{
+     margin-left: 100px;
+     margin-top: 50px;
+     border-radius: 10px;
+
+}
+.img-box:hover{
+    transform: scale(1.10);
+    transition: 0.5s;
+}
+
+.con-btn2{
+    margin-left: 13px;
+    width:70px ;
+    padding: 5px;
+    margin-top: 20px;
+}
+.con-btn1{
+    width:70px ;
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
